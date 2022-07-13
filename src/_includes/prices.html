@@ -3,6 +3,8 @@
     {% for price in prices %}
         <li>
             {{ price.data.title }}
+            {{ price.data.price }}
+            {{ price.data.description }}
         </li>
     {% endfor %}
 </ul>
