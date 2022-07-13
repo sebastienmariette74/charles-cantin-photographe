@@ -8,7 +8,8 @@ module.exports = function (eleventyConfig) {
     //     outputDir: '_site/js',
     //     uglify: prod,
     //   });
-
+    
+    eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
