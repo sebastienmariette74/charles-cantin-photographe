@@ -18,9 +18,9 @@ collections:
       - {label: "Date", name: "date", widget: "date", default: ""}
       - {label: "Post Body", name: "body", widget: "markdown"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-  - name: "src/prices" # Used in routes, e.g., /admin/collections/blog
+  - name: "prices" # Used in routes, e.g., /admin/collections/blog
     label: "Tarifs" # Used in the UI
-    folder: "src/prices" # The path to the folder where the documents are stored
+    folder: "prices" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
