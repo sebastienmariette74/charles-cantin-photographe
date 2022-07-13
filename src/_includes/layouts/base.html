@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "basehead.html" %}
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+    {% include "header.html" %}
+    {{ content | safe }}
+    <script defer type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>

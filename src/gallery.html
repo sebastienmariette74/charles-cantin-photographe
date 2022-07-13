@@ -1,0 +1,28 @@
+--- 
+layout: layouts/home.html
+title: Galerie Photo - Charles QUENTIN - PHOTOGRAPHE
+description: Galerie photo de Charles CANTIN, photographe professionnelle, couvrant l'ensemble de ses différentes prestations (mariage, grossesse, bébé, famille, baptême, couple, portrait)
+---
+
+<section>
+    <h1>Découvrez mon travail à travers quelques photos de ma collection</h1>
+    <select id="select">
+        <option selected>Sélectionnez une catégorie</option>
+        <option value="wedding">Mariage</option>
+        <option value="pregnant">Grossesse</option>
+        <option value="baby">Bébé</option>
+        <option value="family">Famille</option>
+        <option value="baptism">Baptême</option>
+        <option value="couple">Couple</option>
+        <option value="portrait">Portrait</option>
+    </select>
+    <div>
+        {% for image in gallery %}
+        {# <img src="/assets/images/{{ image.name }}.jpg" alt="photo faite par Charles Cantin" width="100px"> #}
+            {% if image.category === 'pregnant' %}
+                <img src="/assets/images/{{ image.name }}.jpg" alt="photo faite par Charles Cantin" width="100px">
+            {% endif %}            
+        {% endfor %}
+    </div>
+    <div id="displayImages"></div>
+</section>
