@@ -8,11 +8,12 @@ module.exports = function (eleventyConfig) {
     //     outputDir: '_site/js',
     //     uglify: prod,
     //   });
-    
+
     eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
+    eleventyConfig.addPassthroughCopy("src/prices");
     eleventyConfig.addWatchTarget("src/css");
 
     // const prod = process.env.ELEVENTY_ENV === 'prod';
