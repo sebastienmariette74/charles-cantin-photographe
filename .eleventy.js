@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
-    eleventyConfig.addPassthroughCopy("src/prices");
+    // eleventyConfig.addPassthroughCopy("src/prices");
     eleventyConfig.addWatchTarget("src/css");
 
     // const prod = process.env.ELEVENTY_ENV === 'prod';
