@@ -1,21 +1,19 @@
 // const Card = require('./src/_includes/components/Card');
 
+const eleventySass = require("eleventy-sass");
 
 module.exports = function (eleventyConfig) {
 
-    // eleventyConfig.addPlugin(babel, {
-    //     watch: 'src/js/script.js',
-    //     outputDir: '_site/js',
-    //     uglify: prod,
-    //   });
+    eleventyConfig.addPlugin(eleventySass);
 
     eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy("src/assets");
-    eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets/css/scss");
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/prices");
     eleventyConfig.addPassthroughCopy("prices");
-    eleventyConfig.addWatchTarget("src/css");
+    eleventyConfig.addWatchTarget("src/assets/css");
 
     // const prod = process.env.ELEVENTY_ENV === 'prod';
 
@@ -44,4 +42,3 @@ module.exports = function (eleventyConfig) {
         dataTemplateEngine: "njk",
     };
 };
-
