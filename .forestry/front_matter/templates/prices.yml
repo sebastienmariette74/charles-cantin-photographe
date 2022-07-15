@@ -8,12 +8,11 @@ fields:
     required: false
   label: Title
 - name: prices
-  type: blocks
-  label: Prices
-  template_types: []
+  type: text
   config:
-    min: 
-    max: 
+    required: false
+  label: Price
+  hidden: true
 - name: description
   type: textarea
   default: ''
