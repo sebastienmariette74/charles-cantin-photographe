@@ -1,9 +1,7 @@
 let select = document.getElementById('select');
 let displayImages = document.getElementById('displayImages');
 console.log(select);
-console.log('ok');
-
-
+console.log('script ok');
 
 let gallery = [
     {
@@ -113,32 +111,26 @@ let disp = () => {
     }
 }
 
+let target = "";
+
+// for (let photo of gallery){
+//     let photoName = `<img src="/assets/images/${photo.name}.jpg" width="100px"></img>` ;
+//     displayImages.innerHTML += photoName;
+// }
 
 function displayPhotos () {
     select.addEventListener('change', (event)=>{
-        console.log('change');
-        console.log(event.target.value);
+        displayImages.innerHTML = "";
+        display = [];
+        target = event.target.value;
         for (let photo of gallery){
-            // console.log(photo.category);
-            // console.log(photo.name);
-            // console.log(event.target.value);
-            if (photo.category === event.target.value){
-                // display = display.push(photo.name);
+            if (photo.category === target && target != ""){
                 display.push(photo.name);
                 let photoName = `<img src="/assets/images/${photo.name}.jpg" width="100px"></img>` ;
-                displayImages.innerHTML += photoName;
-                // displayImages.innerHTML += '<img src="/assets/images/${photo.name}.jpg"></img>';
-                console.log(displayImages.innerText);
-                
-            }
+                displayImages.innerHTML += photoName;                
+            } 
         }
-        console.log(display);
     })
-    // disp();
-    
 }
-
-console.log(display);
-
 
 displayPhotos();

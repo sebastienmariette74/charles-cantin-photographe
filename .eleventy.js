@@ -5,6 +5,19 @@ const eleventySass = require("eleventy-sass");
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(eleventySass);
+    eleventyConfig.addJavaScriptFunction("select", 
+        function select () {
+            // let sel = document.getElementById('select');
+            // sel.addEventListener('change', (event)=>{
+            //     console.log('change');
+            //     console.log(event.target.value);
+            //     return event.target.value;
+            // })
+            return 'select ok';
+        }
+    );
+
+    //     eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
 
     eleventyConfig.addPassthroughCopy('admin');
     eleventyConfig.addPassthroughCopy("src/assets");

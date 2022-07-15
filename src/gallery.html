@@ -17,12 +17,17 @@ description: Galerie photo de Charles CANTIN, photographe professionnelle, couvr
         <option value="portrait">Portrait</option>
     </select>
     <div>
-        {% for image in gallery %}
-        {# <img src="/assets/images/{{ image.name }}.jpg" alt="photo faite par Charles Cantin" width="100px"> #}
+        {# {% for image in gallery %}
+        <img src="/assets/images/{{ image.name }}.jpg" alt="photo faite par Charles Cantin" width="100px">
             {% if image.category === 'pregnant' %}
                 <img src="/assets/images/{{ image.name }}.jpg" alt="photo faite par Charles Cantin" width="100px">
             {% endif %}            
-        {% endfor %}
+        {% endfor %} #}
     </div>
     <div id="displayImages"></div>
+
+    {% set var = select %}
+    
+    {% set gallery = collections.gallery %}
+    {% include "gallery.html" %}
 </section>
