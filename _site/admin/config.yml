@@ -25,6 +25,6 @@ collections:
       # - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Nom du fichier", name: "name", widget: "string"}
       - {label: "Nom du ", name: "name", widget: "string"}
-      - {label: "Catégorie", name: "category", widget: "string"}
+      - {label: "Catégorie", name: "category", widget: "select"}
       - {label: "Image", name: "thumbnail", widget: "image"}
 
