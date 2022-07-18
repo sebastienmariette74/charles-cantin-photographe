@@ -1,17 +1,24 @@
-<header>
-    <nav>
-        <div class="brand"></div>
-        <div class="main">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/gallery">Galerie</a></li>
-                <li><a href="/tarifs">Tarifs</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
+<header class="header">
+    <nav class="navbar">
+        <div class="navbar__brand">
+            {# <img src="/assets/images/logo.png" alt="logo du site Charles CANTIN Photographe" width="100px">             #}
+            {# <img src="/assets/images/logo2.png" alt="logo du site Charles CANTIN Photographe" width="100px">             #}
+            <img src="/assets/images/logo2.svg" alt="logo du site Charles CANTIN Photographe" >            
         </div>
-        <div class="social-media">
-            <img src="\assets\images\facebook.png" alt="" width="30px">
-            <img src="\assets\images\instagram.png" alt="" width="30px">
+        <div class="navbar__burger">
+            <img src="/assets/images/list.svg" alt="icone du menu burger">            
+        </div>
+        <div id="main" class="navbar__main d-none">
+            <ul>
+                <li class="item"><a href="/">Accueil</a></li>
+                <li class="item"><a href="/gallery">Galerie</a></li>
+                <li class="item"><a href="/tarifs">Tarifs</a></li>
+                <li class="item"><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="navbar__social-media">
+                <img src="\assets\images\facebook.png" alt="" width="30px">
+                <img src="\assets\images\instagram.png" alt="" width="30px">
+            </div>
         </div>
     </nav>
 </header>

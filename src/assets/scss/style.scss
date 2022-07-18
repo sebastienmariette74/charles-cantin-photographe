@@ -1,9 +1,8 @@
-h1{
-    color: red;
-    // color: blue;
+@import 'reset';
+@import 'layouts/header';
+@import 'layouts/footer';
 
-}
 
-a {
-    padding: 5px 10px;
+* {
+    border: 1px solid;    
 }
