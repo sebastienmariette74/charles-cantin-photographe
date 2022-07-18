@@ -1,0 +1,30 @@
+[
+    {
+        "category" : "Mariage",
+        "slug" : "mariage"
+    },
+    {
+        "category" : "Grossesse",
+        "slug" : "grossesse"
+    },
+    {
+        "category" : "Bébé",
+        "slug" : "bebe"
+    },
+    {
+        "category" : "Famille",
+        "slug" : "famille"
+    },
+    {
+        "category" : "Baptême",
+        "slug" : "bapteme"
+    },
+    {
+        "category" : "Couple",
+        "slug" : "couple"
+    },
+    {
+        "category" : "Portrait",
+        "slug" : "portrait"
+    }
+]

@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/css/scss");
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/prices");
+    eleventyConfig.addPassthroughCopy("src/thumbnails");
     eleventyConfig.addPassthroughCopy("prices");
     eleventyConfig.addWatchTarget("src/assets/css");
 

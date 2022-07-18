@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
     <meta name="description" content="Galerie photo de Charles CANTIN, photographe professionnelle, couvrant l&#39;ensemble de ses différentes prestations (mariage, grossesse, bébé, famille, baptême, couple, portrait)">
-    <link rel="stylesheet" href="assets/scss/style.css">     
+    <link rel="stylesheet" href="/assets/scss/style.css"> 
     
     
 
@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/gallery">Galerie</a></li>
-                <li><a href="/prices">Tarifs</a></li>
+                <li><a href="/tarifs">Tarifs</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -33,42 +33,41 @@
     </nav>
 </header>
     
-<section>
-    <h1>Découvrez mon travail à travers quelques photos de ma collection</h1>
-    <select id="select">
-        <option selected>Sélectionnez une catégorie</option>
-        <option value="wedding">Mariage</option>
-        <option value="pregnant">Grossesse</option>
-        <option value="baby">Bébé</option>
-        <option value="family">Famille</option>
-        <option value="baptism">Baptême</option>
-        <option value="couple">Couple</option>
-        <option value="portrait">Portrait</option>
-    </select>
-    <div>
+<h1>Découvrez mon travail à travers quelques photos de ma collection</h1>
+<div class="my-3">    
         
-    </div>
-    <div id="displayImages"></div>
+    <button class="btn btn-primary hover checked" checked><a href="/categories/mariage/"  style="color: white;text-decoration : none">Mariage</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/grossesse/"  style="color: white;text-decoration : none">Grossesse</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/bebe/"  style="color: white;text-decoration : none">Bébé</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/famille/"  style="color: white;text-decoration : none">Famille</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/bapteme/"  style="color: white;text-decoration : none">Baptême</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/couple/"  style="color: white;text-decoration : none">Couple</a></button>
+        
+    <button class="btn btn-primary hover checked" checked><a href="/categories/portrait/"  style="color: white;text-decoration : none">Portrait</a></button>
+    
+</div>
 
     
     
-    
-    <div>
-    
-    <img src="/assets/images/wedding01.jpg" alt="" width="100px">
-    
-    <img src="/assets/images/pregnant01.jpg" alt="" width="100px">
-    
-    <img src="/assets/images/wedding02.jpg" alt="" width="100px">
-    
-    <img src="/assets/images/baby06.jpg" alt="" width="100px">
-    
-    <img src="/assets/images/baptism02.jpg" alt="" width="100px">
-    
-</div>
-</section>
+
+    <img src="/assets/images/wedding01.jpg" alt="photo faite par Charles Cantin" width="100px">
+
+    <img src="/assets/images/wedding02.jpg" alt="photo faite par Charles Cantin" width="100px">
+
+    <img src="/assets/images/wedding02.jpg" alt="photo faite par Charles Cantin" width="100px">
+
+    <img src="/assets/images/baby06.jpg" alt="photo faite par Charles Cantin" width="100px">
+
+    <img src="/assets/images/baptism01.jpg" alt="photo faite par Charles Cantin" width="100px">
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="/js/script.js"></script>
+    
 </body>
 </html>

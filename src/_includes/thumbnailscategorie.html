@@ -1,0 +1,5 @@
+{% for thumbnails in collections.thumbnails %}
+    {% if thumbnails.data.category === category %}
+        <img src="/{{thumbnails.data.path}}" alt="photo faite par Charles Cantin" width="100px">
+    {% endif %}
+{% endfor %}
