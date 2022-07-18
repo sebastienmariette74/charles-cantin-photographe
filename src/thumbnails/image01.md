@@ -1,6 +1,6 @@
 --- 
 name: wedding01
-category: wedding
+category: mariage
 path: assets/images/wedding01.jpg
 ---
 

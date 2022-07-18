@@ -1,5 +1,5 @@
 ---
 name: baby06
-category: baby
+category: bébé
 path: assets/images/baby06.jpg
 ---

@@ -1,5 +1,5 @@
 ---
 name: baptism02
-category: baptism
+category: baptême
 path: assets/images/baptism01.jpg
 ---

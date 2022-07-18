@@ -1,8 +1,7 @@
 --- 
 name: pregnant01
-category: pregnant
+category: grossesse
 path: assets/images/wedding02.jpg
-
 ---
 
 
