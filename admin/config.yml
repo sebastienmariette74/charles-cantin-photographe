@@ -16,6 +16,7 @@ collections:
       - {label: "Prestation", name: "title", widget: "string"}
       - {label: "Prix", name: "price", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Description complémentaire", name: "description2", widget: "text"}
       # - {label: "Description", name: "description", widget: "text"}
   - name: "thumbnails" # Used in routes, e.g., /admin/collections/blog
     label: "Image" # Used in the UI
