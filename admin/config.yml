@@ -25,5 +25,5 @@ collections:
       # - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
       - {label: "Image", name: "path", widget: "image", choose_url : true}
       - {label: "Nom du fichier", name: "name", widget: "string"}
-      - {label: "Catégorie", name: "category", widget: "select", options : ["Mariage", "Grossesse", "Famille", "Baptême", "Couple", "Portrait", "Bébé"]}
+      - {label: "Catégorie", name: "category", widget: "select", options : ["mariage", "grossesse", "famille", "baptême", "couple", "portrait", "bébé"]}
 
