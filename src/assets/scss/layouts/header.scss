@@ -1,21 +1,20 @@
 .header {
+    // position: relative;
     li {
         list-style : none
     }
-    height : 150px;
-    background : #46545d;
+    display: flex;
+    height: 80px;
+    // background : #46545d;
+    background : linear-gradient(to right, rgba(70, 84, 93, 0.644), #46545d);
 }
 
-
-
 .navbar {
-    display: flex;
-    margin : 0 ;
+    width: 100vw;
+    margin : auto 20px;
     padding : 0;
     img {
         width : 50px;
-        margin-right : 20px;
-        padding : 0;
     }
     &__main ul {
         // display : flex;
