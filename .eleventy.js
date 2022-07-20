@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     //     eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
 
     eleventyConfig.addPassthroughCopy('admin');
-    eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/assets/images");
     eleventyConfig.addPassthroughCopy("src/assets/scss");
     eleventyConfig.addPassthroughCopy("src/assets/css");
     eleventyConfig.addPassthroughCopy("src/assets/css/scss");
@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/prices");
     eleventyConfig.addPassthroughCopy("src/thumbnails");
     eleventyConfig.addPassthroughCopy("prices");
-    eleventyConfig.addWatchTarget("src/assets/css");
+    eleventyConfig.addWatchTarget("src/assets/scss");
 
     // const prod = process.env.ELEVENTY_ENV === 'prod';
 
