@@ -1,5 +1,5 @@
 .footer {
-    position: fixed;  
+    position: absolute;  
     width: 100%;
     bottom: 0;
     background : linear-gradient(to left, #46545da4, #46545d 60%);
@@ -20,7 +20,7 @@
         padding-top : 5px;
         a {
             padding:5px 0 10px;
-            text-decoration: none;
+            text-decoration: none; 
             color : inherit;
         }
     }
