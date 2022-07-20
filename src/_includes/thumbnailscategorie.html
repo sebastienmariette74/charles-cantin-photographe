@@ -1,5 +1,8 @@
-{% for thumbnails in collections.thumbnails %}
-    {% if thumbnails.data.category === category %}
-        <img src="/assets/images/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" width="100px">
-    {% endif %}
-{% endfor %}
+    <div class="gallery__thumbnails">
+        {% for thumbnails in collections.thumbnails %}
+            {% if thumbnails.data.category === category %}
+                <img src="/assets/images/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" width="100px">
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

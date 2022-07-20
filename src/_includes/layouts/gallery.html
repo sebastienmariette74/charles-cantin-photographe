@@ -1,10 +1,11 @@
 {% extends "layouts/home.html" %}
 
 {% block headergallery %}
-<h1>Découvrez mon travail à travers quelques photos de ma collection</h1>
-<div class="my-3">    
-    {% for category in collections.categories %}    
-    <button class="btn btn-primary  " checked><a href="{{category.url | url}}"  style="color: white;text-decoration : none">{{category.data.name}}</a></button>
-    {% endfor %}
-</div>
+<section class="gallery">
+    {# <h1>Découvrez mon travail à travers quelques photos de ma collection</h1> #}
+    <div class="gallery__category my-3">    
+        {% for category in collections.categories %}    
+        <button class=" "><a href="{{category.url | url}}">{{category.data.name}}</a></button>
+        {% endfor %}
+    </div>
 {% endblock %}
