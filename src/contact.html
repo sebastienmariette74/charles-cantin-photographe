@@ -7,18 +7,30 @@ permalink : /contact/
 ---
 
 <h1>Formulaire de contact</h1>
-<form name="contact" data-netlify="true">    
-    <p>
-      <label>Prénom<input type="text" name="firstname" /></label>
-    </p>
-    <p>
-      <label>Nom <input type="text" name="lastname" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-    <p>
-      <button type="submit">Envoyer</button>
-    </p>
+<form
+  name="contact"
+  method="POST"
+  data-netlify-recaptcha="true"
+  data-netlify="true"
+>
+  <p>
+    <label>Prénom<input type="text" name="firstname" /></label>
+  </p>
+  <p>
+    <label>Nom <input type="text" name="lastname" /></label>
+  </p>
+  <p>
+    <label>
+      Email: <input type="text" name="email" />
+    </label>
+  </p>
+  <p>
+    <label>
+      Message: <textarea name="message"></textarea>
+    </label>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+    <button type="submit">Send</button>
+  </p>
 </form>
