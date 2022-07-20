@@ -1,0 +1,29 @@
+.home__title {
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    text-align: center;
+    //line-height: 100vh;
+    overflow: scroll;
+    //top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    //bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    .identity {
+        font-size: 2.3rem;
+        font-weight: 700;
+        // color: blue;
+    }
+    .job {
+        display: block;
+        font-size: 2rem;
+        margin-top: 20px;
+        font-family: 'Dancing Script', cursive;
+    }
+}
