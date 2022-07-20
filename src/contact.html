@@ -7,7 +7,7 @@ permalink : /contact/
 ---
 
 <h1>Formulaire de contact</h1>
-<form name="contact" netlify>
+<form name="contact" netlify data-netlify-recaptcha="true">
     <p>
       <label>Prénom<input type="text" name="firstname" /></label>
     </p>
@@ -18,6 +18,9 @@ permalink : /contact/
       <label>Email <input type="email" name="email" /></label>
     </p>
       <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+    <p>
+      <div data-netlify-recaptcha="true"></div>
+    </p>
     <p>
       <button type="submit">Envoyer</button>
     </p>

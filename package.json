@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "@netlify/plugin-a11y": "^1.0.0-beta.1"
   },
   "dependencies": {
     "common-tags": "^1.8.2",
