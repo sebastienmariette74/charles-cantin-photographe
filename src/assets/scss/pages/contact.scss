@@ -1,0 +1,13 @@
+.contact {
+    &__title {
+        padding-top: 10px;
+        text-align: center;
+    }
+    &__form {
+        margin: 10px;
+        label, input {
+            // display: inline-block;
+            // width: 200px;
+        }
+    }
+}
