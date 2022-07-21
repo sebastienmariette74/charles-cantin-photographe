@@ -1,3 +1,25 @@
 .prices {
     margin: 100px 10px 10px;   
+    &__title{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #46545d;
+    }
+    &__list {
+        padding: 0;
+        li {
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+            border-radius: 6px;
+            box-shadow: 0 0 10px 2px grey;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+        }
+        hr{
+            margin: 10px -10px;
+        }
+    }
 }

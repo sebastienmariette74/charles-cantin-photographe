@@ -1,10 +1,11 @@
-<ul>
+<ul class="prices__list">
     {% for price in prices %}
-        <li>
+        <li class="item">
             &Lt; {{ price.data.title }} &Gt;
             {{ price.data.price }} <br>
+            <hr>
             {{ price.data.description }} <br>
             {{ price.data.description2 }}
-        </li>
+        </li> 
     {% endfor %}
 </ul>
