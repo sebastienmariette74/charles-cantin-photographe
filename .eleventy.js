@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     //     eleventyConfig.addLayoutAlias('base', 'layouts/base.html');
 
     eleventyConfig.addPassthroughCopy('admin');
-    // eleventyConfig.addPassthroughCopy("src/assets/images");
+    eleventyConfig.addPassthroughCopy("src/assets/images");
     eleventyConfig.addPassthroughCopy("src/assets/scss");
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addPassthroughCopy("src/prices");
