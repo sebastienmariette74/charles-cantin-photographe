@@ -1,11 +1,14 @@
 <ul class="prices__list">
     {% for price in prices %}
         <li class="item">
-            &Lt; {{ price.data.title }} &Gt;
-            {{ price.data.price }} <br>
+            <p class="d-flex justify-content-between"><span class="fw-bold">&Lt; {{ price.data.title }} &Gt;</span><span class="price">{{ price.data.price }}</span></p> 
             <hr>
-            {{ price.data.description }} <br>
-            {{ price.data.description2 }}
+            <p>
+                {{ price.data.description }} <br>
+                <span class="fst-italic">{{ price.data.description2 }}</span>
+            </p>
+            
+            
         </li> 
     {% endfor %}
 </ul>
