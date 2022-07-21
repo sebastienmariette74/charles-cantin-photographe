@@ -143,13 +143,19 @@ let burger = document.getElementById('burger');
 let toggleBurger = false;
 
 main.style.display = "none";
+// main.style.top = "-170px";
 
 burger.addEventListener("click", () => {
     if (toggleBurger) {
         main.style.display = "none";
+        // main.style.top = "-170px";
+        // main.style.opacity = "0";
         toggleBurger = false;
     } else {
         main.style.display = "block";
+        // main.style.opacity = "1";
+        // main.style.top = "74px";
+
         toggleBurger = true;
     }
 });
@@ -160,6 +166,17 @@ window.addEventListener('click', (event)=>{
         toggleBurger = false;
     }
 })
+
+// let links = document.querySelectorAll('.item');
+// console.log(links);
+
+// for (let link of links){
+//     link.addEventListener('click', ()=>{
+//         console.log("ok");
+//         main.style.display = "none";
+//         main.style.opacity = "0";
+//     })
+// };
 
 /* ___________________________________________________ */
 
