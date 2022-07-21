@@ -1,7 +1,7 @@
 body, html {
     height: 100vh;
-
 }
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -67,8 +67,6 @@ body {
     }
 }
 
-
-
 @media screen and (min-width : 576px){
     .navbar {
         position: relative;
@@ -76,22 +74,22 @@ body {
             display: none;
         }
         &__main {
+            display: flex;
             position: relative;
             width: auto;
-            display: flex;
             top: 0;
             right: 0;
             background: transparent;
+            width: 80vw;
             ul {
-                display: flex;
+                display: flex;                
             }
         }
         &__social-media {
+            display: flex;
             margin: 0;            
             border-top: none ;
-            // display: flex;
             padding: 10px;
-            // justify-content: space-around;
         }
     }
 
