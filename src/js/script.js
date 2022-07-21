@@ -14,7 +14,7 @@ if (size < 576){
     main.style.display = "none";
     burger.style.display = "block";
 } else {
-    main.style.display = "block";
+    main.style.display = "flex";
     burger.style.display = "none";
 }
 
@@ -43,22 +43,6 @@ window.addEventListener('click', (event)=>{
         toggleBurger = false;
     }
 })
-
-// let links = document.querySelectorAll('.item');
-// console.log(links);
-
-// for (let link of links){
-//     link.addEventListener('click', ()=>{
-//         console.log("ok");
-//         main.style.display = "none";
-//         main.style.opacity = "0";
-//     })
-// };
-
-/* ___________________________________________________ */
-
-
-
   
 window.addEventListener('resize', () => {    
     const size = changeWidth();
@@ -70,3 +54,29 @@ window.addEventListener('resize', () => {
         burger.style.display = "block";
     }
 });
+
+// Get the container element
+let link = document.getElementById("link");
+console.log(link);
+
+// Get all buttons with class="btn" inside the container
+let links = document.querySelectorAll(".link");
+console.log(links);
+
+// Loop through the buttons and add the active class to the current/clicked button
+// for (let i = 0; i < items.length; i++) {
+//     items[i].addEventListener("click", function() {
+//     // let current = document.getElementsByClassName("active");
+//     // console.log(current);
+//     // current[0].className = current[0].className.replace(" active", "");
+//     items[i].className += " active";
+//   });
+// }
+
+let current = location.href;
+
+for (let link of links){
+    if (link.href == current){
+        link.className += ' active';
+    }
+}
