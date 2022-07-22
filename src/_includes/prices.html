@@ -1,7 +1,7 @@
 <ul class="prices__list">
     {% for price in prices %}
-        <li class="item">
-            <p class="d-flex justify-content-between"><span class="fw-bold fs-5">{{ price.data.title }}</span><span class="price">{{ price.data.price }}</span></p> 
+        <li>
+            <p><span class="fw-bold fs-5 ">{{ price.data.title }}</span><span class="price">{{ price.data.price }}</span></p> 
             <hr>
             <p>
                 {{ price.data.description }} <br>
