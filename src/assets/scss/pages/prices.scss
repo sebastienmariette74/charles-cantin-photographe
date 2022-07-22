@@ -28,13 +28,13 @@
 
 @media screen  and (min-width : 576px) {
     .prices {
-        margin: 100px 20vw 10px;
+        margin: 20px 20vw 10px;
         &__list {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
             // align-items: center;
             li {
-                min-width: 50vw;
+                // min-width: 50vw;
                 max-width: 650px;
                 align-self: center;
                 // width: 650px;
