@@ -5,6 +5,7 @@
     background: url("../../assets/images/image-home.jpg") no-repeat center center fixed;
     // background-size: cover;
     &__title {
+        // z-index: -1;
         color: rgba(255, 255, 255, 0.9);
         position: absolute;
         text-align: center;
