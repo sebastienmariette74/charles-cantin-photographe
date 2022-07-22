@@ -1,7 +1,7 @@
     <div class="gallery__thumbnails row">        
         {% for thumbnails in collections.thumbnails %}
             {% if thumbnails.data.category == category %}                        
-                    <div class="col-md-4"> 
+                    <div class="col-sm-4"> 
                         <img class="" src="/assets/images/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" >
                     </div>
             {% endif %}       

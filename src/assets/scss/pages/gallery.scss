@@ -31,7 +31,14 @@
             -moz-border-radius: 20px;
             -ms-border-radius: 20px;
             -o-border-radius: 20px;
+            &:active {
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
 }
+        }
     }
 }
 
