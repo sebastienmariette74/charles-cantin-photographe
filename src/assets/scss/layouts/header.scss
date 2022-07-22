@@ -72,6 +72,9 @@ body {
 }
 
 @media screen and (min-width : 576px){
+    .header {
+        // position: inherit;
+    }
     .navbar {
         position: relative;
         &__burger {
