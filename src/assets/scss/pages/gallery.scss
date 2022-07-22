@@ -2,7 +2,7 @@
     margin: 100px 10px 10px;  
     &__category {
         position: sticky;
-        top: 0;
+        top: 80px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -52,6 +52,9 @@
 }
 
 @media screen and (min-width : 576px) {
+    .category {
+        top: 0;
+    }
     .gallery {
         margin-top: 20px;  
     }
