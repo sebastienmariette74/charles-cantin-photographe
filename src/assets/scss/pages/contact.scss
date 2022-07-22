@@ -1,20 +1,17 @@
 .contact {
-    height: 100vh;
-    // height: calc (100vh-17vh);
     margin-top: 80px;
     &__title {
         padding-top: 10px;
         text-align: center;
     }
     &__form {
-        margin: 10px;
-        label, input {
-            // display: inline-block;
-            // width: 200px;
-        }
+        margin: 20px;
+        
     }
 }
 
 @media screen and (min-width : 576px) {
-    
+    .contact {
+        margin: 20px 20vw 10px;
+    }
 }

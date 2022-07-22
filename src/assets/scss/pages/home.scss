@@ -1,11 +1,10 @@
 .home {
     margin-top: 80px;
-    z-index: -1;
-    height: 100vh;
+    z-index: 1;
+    height: 89vh;
     background: url("../../assets/images/image-home.jpg") no-repeat center center fixed;
-    // background-size: cover;
     &__title {
-        // z-index: -1;
+        z-index: 2;
         color: rgba(255, 255, 255, 0.9);
         position: absolute;
         text-align: center;
@@ -36,6 +35,17 @@
     .home {
         background: url("../../assets/images/charlescantin.jpg") no-repeat center center;
         margin-top: 0;
-
+        &__title {
+            .identity {
+                font-size: 5rem;
+                font-weight: 700;
+            }
+            .job {
+                display: block;
+                font-size: 5rem;
+                margin-top: 5px;
+                font-family: 'Dancing Script', cursive;         
+            }
+        }
     }
 }

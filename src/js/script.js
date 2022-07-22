@@ -9,6 +9,8 @@ let changeWidth = () => {
     return window.innerWidth;
 };
 
+
+
 let size = changeWidth();
 if (size < 576){
     main.style.display = "none";
@@ -80,3 +82,23 @@ for (let link of links){
         link.className += ' active';
     }
 }
+
+let container = document.getElementById('container');
+let footer = document.getElementById('footer');
+
+let getHheightContainer = () => {
+    return container.offsetHeight;
+}
+
+console.log(window.innerHeight);
+console.log(body.offsetHeight);
+
+let heightContainer = getHheightContainer();
+
+if ( heightContainer < window.innerHeight ){
+    footer.style.position = "absolute";
+    footer.style.bottom = "0";
+    footer.style.width = "100%";
+}
+
+// console.log(heightBody());
