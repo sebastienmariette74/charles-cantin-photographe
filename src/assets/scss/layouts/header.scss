@@ -89,13 +89,12 @@ body {
             right: 0;
             background: transparent;
             margin-right: 20px;
-            // width: 80vw;
+            font-size: 1.1rem;
             ul {
                 display: flex;   
                 li{
                     height: 45px;
                     line-height: 45px;
-                    // margin: 10px 20px;
                 }
                 .link {
                     text-decoration: none;
@@ -104,14 +103,22 @@ body {
                     margin-left: 10px;
                     &:hover{
                         border-bottom: 5px solid white;
+                        background: rgba(255, 255, 255, 0.1);
+                        border-radius: 6px 6px 0 0;
                         color: white;
 
                     }      
                 }
                 .active {
                     border-bottom: 5px solid white;
+                    background: rgba(255, 255, 255, 0.1);
                     color: white;
-                }       
+                    border-radius: 6px 6px 0 0;
+                    -webkit-border-radius: 6px 6px 0 0;
+                    -moz-border-radius: 6px 6px 0 0;
+                    -ms-border-radius: 6px 6px 0 0;
+                    -o-border-radius: 6px 6px 0 0;
+}       
             }
         }
         &__social-media {
