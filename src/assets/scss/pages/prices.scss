@@ -1,5 +1,5 @@
 .prices {
-    margin: 100px 10px 10px;   
+    margin: 120px 10px 10px;   
     &__title{
         text-align: center;
         margin-bottom: 20px;
@@ -8,7 +8,8 @@
     }
     &__list {
         padding: 0;
-        li {
+        li {            
+            
             margin: 10px;
             padding: 10px;
             list-style: none;
@@ -21,6 +22,23 @@
         }
         hr{
             margin: 10px -10px;
+        }
+    }
+}
+
+@media screen  and (min-width : 576px) {
+    .prices {
+        margin: 100px 20vw 10px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            li {
+                min-width: 50vw;
+                max-width: 650px;
+                align-self: center;
+                // width: 650px;
+            }
         }
     }
 }

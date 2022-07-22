@@ -1,6 +1,6 @@
 body, html {
-    height: 100vh;
-    overflow-x: hidden;
+    // height: 100vh;
+    // overflow-x: hidden;
 }
 
 body {
@@ -73,7 +73,7 @@ body {
 
 @media screen and (min-width : 576px){
     .header {
-        // position: inherit;
+        position: inherit;
     }
     .navbar {
         position: relative;
