@@ -15,7 +15,7 @@ permalink : /contact/
       data-netlify="true"
       class="contact__form"
     >
-      <div class="mb-3">
+      <div id="input" class="mb-3">
         <input type="text" class="form-control" id="firstname" placeholder="Prénom" required>
       </div>
       <div class="mb-3">
@@ -32,6 +32,6 @@ permalink : /contact/
         <textarea class="form-control" id="message" rows="10" placeholder="Votre message"></textarea>
       </div>
       <div data-netlify-recaptcha="true" class="recaptcha mb-3"></div>
-      <button type="submit" class="btn btn-primary mb-3">Envoyez</button>           
+      <div><button type="submit" class="btn btn-primary mb-3">Envoyez</button></div>           
     </form>
 </section>

@@ -14,15 +14,15 @@
 @media screen and (min-width : 576px) {
     .contact {
         margin: 20px 20vw 10px;
+    }
+}
+@media screen and (min-width : 1170px) {
+    .contact {
         &__form {
-            max-width: 650px;
-            // display: flex;
-            // flex-direction: column;
-            // .recaptcha {
-            //     height: 100px;
-            //     // height: 100%;
-            //     width: 100px;
-            // }
+            div {
+                margin: auto;
+                width: 650px;
+            }
         }
     }
 }

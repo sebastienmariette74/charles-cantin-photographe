@@ -1,6 +1,7 @@
 let href = location.href;
 let hrefSplit = href.split('/');
-let page = hrefSplit[hrefSplit.length - 2];
+let page = hrefSplit[3];
+console.log(page);
 
 /* ____________________ MENU BURGER ___________________*/
 
@@ -80,8 +81,9 @@ for (let linkCategory of linksCategories){
 /* ________________________ display image _______________________*/
 
 
-if (page == "gallery"){
+if (page == "gallery" || page == "categories"){
     let thumbnails = document.querySelectorAll('.thumbnails');
+    console.log(thumbnails);
     let modalImage = document.getElementById('modal-image');
     modalImage.style.cursor = "pointer";
     let displayImage = document.getElementById('display-image');
@@ -124,8 +126,6 @@ let getHheightContainer = () => {
 }
 
 let heightContainer = getHheightContainer();
-console.log(window.innerHeight);
-console.log(window.innerWidth);
 
 if ( heightContainer < window.innerHeight ){
     footer.style.position = "absolute";
