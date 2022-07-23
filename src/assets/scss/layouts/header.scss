@@ -54,11 +54,11 @@ body {
             li{
                 height: 45px;
                 line-height: 45px;
-                // margin: 10px 20px;
                 a {
                     text-decoration: none;
                     color: white;
                     padding: 10px 60px 10px 10px;
+                    // margin: auto;
                 }
             }
         }
@@ -96,9 +96,9 @@ body {
                     height: 45px;
                     line-height: 45px;
                 }
-                .link {
+                .link-navbar {
                     text-decoration: none;
-                    color: rgba(255, 255, 255, 0.438);
+                    color: #ffffff70;
                     padding: 10px 20px;
                     margin-left: 10px;
                     &:hover{

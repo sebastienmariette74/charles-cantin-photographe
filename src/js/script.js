@@ -1,3 +1,7 @@
+let href = location.href;
+let hrefSplit = href.split('/');
+let page = hrefSplit[hrefSplit.length - 2];
+
 /* ____________________ MENU BURGER ___________________*/
 
 let main = document.getElementById('main');
@@ -9,8 +13,6 @@ let changeWidth = () => {
     return window.innerWidth;
 };
 
-
-
 let size = changeWidth();
 if (size < 576){
     main.style.display = "none";
@@ -20,20 +22,12 @@ if (size < 576){
     burger.style.display = "none";
 }
 
-// main.style.display = "none";
-// main.style.top = "-170px";
-
 burger.addEventListener("click", () => {
     if (toggleBurger) {
         main.style.display = "none";
-        // main.style.top = "-170px";
-        // main.style.opacity = "0";
         toggleBurger = false;
     } else {
         main.style.display = "block";
-        // main.style.opacity = "1";
-        // main.style.top = "74px";
-
         toggleBurger = true;
     }
 });
@@ -57,31 +51,70 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Get the container element
-let link = document.getElementById("link");
-console.log(link);
-
-// Get all buttons with class="btn" inside the container
-let links = document.querySelectorAll(".link");
-console.log(links);
-
-// Loop through the buttons and add the active class to the current/clicked button
-// for (let i = 0; i < items.length; i++) {
-//     items[i].addEventListener("click", function() {
-//     // let current = document.getElementsByClassName("active");
-//     // console.log(current);
-//     // current[0].className = current[0].className.replace(" active", "");
-//     items[i].className += " active";
-//   });
-// }
-
+/*_______________ NAVBAR ________________________*/
+// let link = document.getElementById("link");
+let linksNavbar = document.querySelectorAll(".link-navbar");
+let linksCategories = document.querySelectorAll(".link-category");
+let linkGallery = document.getElementById("link-gallery");
 let current = location.href;
 
-for (let link of links){
-    if (link.href == current){
-        link.className += ' active';
-    }
+for (let linkNavbar of linksNavbar){
+    if (linkNavbar.href == current){
+        linkNavbar.className += ' active';
+    }    
 }
+
+for (let linkCategory of linksCategories){    
+    linkCategory.style.color = '#ffffff70'; 
+    if (linkCategory.href == current){
+        linkGallery.className.replace('active', "");
+        linkGallery.className += ' active'; 
+        linkCategory.style.color = '#fff';
+    } 
+    linkCategory.addEventListener('click', ()=>{
+        console.log("");
+        this.style.color = "red";
+    })
+}
+
+/* ________________________ display image _______________________*/
+
+
+if (page == "gallery"){
+    let thumbnails = document.querySelectorAll('.thumbnails');
+    let modalImage = document.getElementById('modal-image');
+    modalImage.style.cursor = "pointer";
+    let displayImage = document.getElementById('display-image');
+    modalImage.style.display = "none";
+    for (let image of thumbnails){
+        image.style.cursor = "pointer";
+        image.addEventListener('click', ()=>{     
+                displayImage.innerHTML = "";
+                modalImage.style.display = "block";
+                let content = image.cloneNode(false);
+                displayImage.appendChild(content);
+                toggleImage = false;
+        })   
+    };
+
+    displayImage.addEventListener('click', ()=>{
+        console.log(displayImage);
+        if (modalImage.style.display == "block"){
+            console.log('ok');
+            modalImage.style.display = "none";
+        }
+    });
+
+    window.addEventListener('click', (event)=>{
+        if (event.target == modalImage){        
+            modalImage.style.display = "none";
+        }
+    });
+}
+
+
+
+/* _____________ footer position ______________________*/
 
 let container = document.getElementById('container');
 let footer = document.getElementById('footer');
@@ -90,15 +123,12 @@ let getHheightContainer = () => {
     return container.offsetHeight;
 }
 
-console.log(window.innerHeight);
-console.log(body.offsetHeight);
-
 let heightContainer = getHheightContainer();
+console.log(window.innerHeight);
+console.log(window.innerWidth);
 
 if ( heightContainer < window.innerHeight ){
     footer.style.position = "absolute";
     footer.style.bottom = "0";
     footer.style.width = "100%";
-}
-
-// console.log(heightBody());
+};

@@ -1,8 +1,8 @@
 <div class="gallery__thumbnails row">        
     {% for thumbnails in collections.thumbnails %}               
-                <div class="col-sm-4"> 
-                    <img class="" src="/assets/images/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" >
-                </div>
+        <div class="col-sm-4 col-md-3"> 
+            <img class="thumbnails" src="/assets/images/{{thumbnails.data.name}}.jpg" alt="photo faite par Charles Cantin" >
+        </div>
     {% endfor %}
 </div>
 </section>

@@ -7,13 +7,22 @@
         font-weight: bold;
     }
     &__form {
-        margin: 20px;
-        
+        margin: 20px;        
     }
 }
 
 @media screen and (min-width : 576px) {
     .contact {
         margin: 20px 20vw 10px;
+        &__form {
+            max-width: 650px;
+            // display: flex;
+            // flex-direction: column;
+            // .recaptcha {
+            //     height: 100px;
+            //     // height: 100%;
+            //     width: 100px;
+            // }
+        }
     }
 }
