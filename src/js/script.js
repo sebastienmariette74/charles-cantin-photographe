@@ -81,7 +81,7 @@ for (let linkCategory of linksCategories){
 /* ________________________ display image _______________________*/
 
 
-if (page == "gallery" || page == "categories"){
+if (page == "galerie"){
     let thumbnails = document.querySelectorAll('.thumbnails');
     console.log(thumbnails);
     let modalImage = document.getElementById('modal-image');

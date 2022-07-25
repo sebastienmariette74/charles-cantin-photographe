@@ -1,28 +1,45 @@
 .contact {
+    margin: 20px;        
     margin-top: 80px;
+
     &__title {
-        padding-top: 10px;
+        padding: 10px 0;
         text-align: center;
         color: #46545d;
         font-weight: bold;
     }
-    &__form {
-        margin: 20px;        
+    h2 {
+        padding-bottom: 10px;
+        text-align: center;
+        color: #46545d;
+        font-weight: bold;
     }
 }
 
 @media screen and (min-width : 576px) {
     .contact {
         margin: 20px 20vw 10px;
+        &__title {
+            padding-bottom: 20px;
+        }
+        &__information {
+            margin-top: 30px;
+        }
     }
 }
 @media screen and (min-width : 1170px) {
-    .contact {
+    .contact  {
         &__form {
             div {
                 margin: auto;
                 width: 650px;
             }
+        }
+        &__information {
+            margin: auto;
+            margin-top: 30px;
+            width: 650px;
+            height: 170px;
         }
     }
 }
