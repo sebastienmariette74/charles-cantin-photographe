@@ -1,8 +1,8 @@
 {% extends "layouts/home.html" %}
 
 {% block headergallery %}
+
 <section class="gallery">
-    {# <h1>Découvrez mon travail à travers quelques photos de ma collection</h1> #}
     <div class="gallery__category">    
         {% for category in collections.categories %}    
         <button><a class="link-category" href="{{category.url | url}}">{{category.data.name}}</a></button>
