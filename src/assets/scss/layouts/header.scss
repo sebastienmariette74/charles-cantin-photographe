@@ -16,7 +16,7 @@ body {
     }
     display: flex;
     height: 80px;
-    background : linear-gradient(to right, rgba(70, 84, 93, 0.643), #46545d 60%);
+    background : linear-gradient(to right, hsla(203, 14%, 32%, 0.643), rgb(70, 84, 93) 60%);
 }
 
 .navbar {

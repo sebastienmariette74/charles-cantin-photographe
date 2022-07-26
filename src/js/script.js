@@ -1,7 +1,6 @@
 let href = location.href;
 let hrefSplit = href.split('/');
 let page = hrefSplit[3];
-console.log(page);
 
 /* ____________________ MENU BURGER ___________________*/
 
@@ -83,7 +82,6 @@ for (let linkCategory of linksCategories){
 
 if (page == "galerie"){
     let thumbnails = document.querySelectorAll('.thumbnails');
-    console.log(thumbnails);
     let modalImage = document.getElementById('modal-image');
     modalImage.style.cursor = "pointer";
     let displayImage = document.getElementById('display-image');
@@ -100,9 +98,7 @@ if (page == "galerie"){
     };
 
     displayImage.addEventListener('click', ()=>{
-        console.log(displayImage);
         if (modalImage.style.display == "block"){
-            console.log('ok');
             modalImage.style.display = "none";
         }
     });
@@ -113,8 +109,6 @@ if (page == "galerie"){
         }
     });
 }
-
-
 
 /* _____________ footer position ______________________*/
 
