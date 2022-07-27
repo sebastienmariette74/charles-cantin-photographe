@@ -31,12 +31,8 @@
 @media screen and (min-width : 1170px) {
     .contact  {
         &__form {
-            div {
+            .form-control {
                 margin: auto;
-                width: 650px;
-            }
-            .captcha {
-                margin: 0;
                 width: 650px;
             }
         }
