@@ -1,16 +1,31 @@
-if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-}
-
 let href = location.href;
 let hrefSplit = href.split('/');
 let page = hrefSplit[3];
+
+
+/* _____________ footer position ______________________*/
+
+let container = document.getElementById('container');
+let footer = document.getElementById('footer');
+
+let getHeightContainer = () => {
+    return container.offsetHeight;
+}
+
+
+let heightContainer = getHeightContainer();
+
+console.log(heightContainer);
+console.log(window.innerHeight);
+
+if ( heightContainer < window.innerHeight ){
+    footer.style.position = "absolute";
+    footer.style.bottom = "0";
+    footer.style.width = "100%";
+};
+
+
+
 
 /* ____________________ MENU BURGER ___________________*/
 
@@ -119,24 +134,3 @@ if (page == "galerie"){
         }
     });
 }
-
-/* _____________ footer position ______________________*/
-
-let container = document.getElementById('container');
-let footer = document.getElementById('footer');
-
-let getHeightContainer = () => {
-    return container.offsetHeight;
-}
-
-
-let heightContainer = getHeightContainer();
-
-console.log(heightContainer);
-console.log(window.innerHeight);
-
-if ( heightContainer < window.innerHeight ){
-    footer.style.position = "absolute";
-    footer.style.bottom = "0";
-    footer.style.width = "100%";
-};
