@@ -126,26 +126,3 @@ if ( heightContainer < window.innerHeight ){
     footer.style.bottom = "0";
     footer.style.width = "100%";
 };
-
-/* ____________________ form _____________________________ */
-
-if (page == "contact"){
-
-    const handleSubmit = (e) => {
-    e.preventDefault();
-    let myForm = document.getElementById("contact");
-    let formData = new FormData(myForm);
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-    })
-        .then(() => console.log("Form successfully submitted"))
-        .catch((error) => alert(error));
-    };
-    
-    document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
-
-}
