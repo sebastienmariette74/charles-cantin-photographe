@@ -2,13 +2,18 @@
 
 # Déploiement #
 
-## Description
-Dépôt du projet Médiathèque.
+## Description : ##
 
-Les documents annexes sont disponibles dans le dossier ANNEXES :
-- Charte graphique
-- Manuel d'utilisation
-- Documentation technique
+Dans le cadre d'une évaluation lors de ma formation de Developpeur Web et Web Mobile, j'ai réalisé ce projet axé front-end. Il consistait à créer le portfolio d'un photographe contenant 4 pages (accueil, galerie, tarifs, contact). L'intérêt de cet exercice a été d'utiliser le générateur de site statique Eleventy (flexibilité) couplé à un CMS headless tel que NetlifyCMS afin que le propriétaire du site puisse faire les modifications qu'il souhaite.
+
+Les documents annexes sont disponibles dans le dossier "annexes" :
+- Charte graphique, wireframes et mockups
+
+Le maquettage a été réalisé à partir de Figma. Il est visible à cette adresse : https://www.figma.com/file/ULRVRPpFkBPhsRvI9dHcM4/Charles-CANTIN?node-id=0%3A1
+
+## Installation en locale ##
+
+Pour récupérer le projet, 
 
 ## Récupération du projet
 
