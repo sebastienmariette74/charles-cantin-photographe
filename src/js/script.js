@@ -125,12 +125,12 @@ if (page == "galerie"){
 let container = document.getElementById('container');
 let footer = document.getElementById('footer');
 
-let getHheightContainer = () => {
+let getHeightContainer = () => {
     return container.offsetHeight;
 }
 
 
-let heightContainer = getHheightContainer();
+let heightContainer = getHeightContainer();
 
 console.log(heightContainer);
 console.log(window.innerHeight);
