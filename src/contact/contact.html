@@ -6,7 +6,6 @@ title: Me contacter
   
     <h1 class="contact__title">Formulaire de contact</h1>
     <form
-      id="contact"
       name="contact"
       method="POST"
       data-netlify-recaptcha="true"
@@ -14,17 +13,17 @@ title: Me contacter
       class="contact__form"
     >
       <div id="input" class="mb-3">
-        <input type="text" class="form-control" id="firstname" placeholder="Prénom" required maxlength="20">
+        <input type="text" class="form-control" id="firstname" placeholder="Prénom" required >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" id="lastname" placeholder="Nom" required maxlength="40">
+        <input type="text" class="form-control" id="lastname" placeholder="Nom" required >
       </div>
       <div class="mb-3">
-        <input type="tel" class="form-control" id="phonenumber" placeholder="Téléphone" required maxlength="14">
+        <input type="tel" class="form-control" id="phonenumber" placeholder="Téléphone" required >
         <small>Format: 06.34.56.XX.90</small>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" id="email" placeholder="Email" required maxlength="70"> 
+        <input type="email" class="form-control" id="email" placeholder="Email" required > 
       </div>
       <div class="mb-3">
         <textarea class="form-control" id="message" rows="10" placeholder="Votre message"></textarea>
