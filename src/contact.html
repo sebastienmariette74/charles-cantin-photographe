@@ -30,6 +30,31 @@ title: Me contacter
       </div>
       <div><button type="submit" class="btn btn-primary mb-3">Envoyer</button></div>           
     </form>
+    <form
+      name="form"
+      method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+      class="contact__form"
+    >
+      <div id="input" class="mb-3">
+        <input type="text" class="form-control" id="firstname" placeholder="Prénom" required >
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="lastname" placeholder="Nom" required >
+      </div>
+      <div class="mb-3">
+        <input type="tel" class="form-control" id="phonenumber" placeholder="Téléphone" required >
+        <small>Format: 06.34.56.XX.90</small>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email" required > 
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="message" rows="10" placeholder="Votre message"></textarea>
+      </div>
+      <div><button type="submit" class="btn btn-primary mb-3">Envoyer</button></div>           
+    </form>
     <div class="contact__information">
       <h2>Mes coordonnées</h2>
       <address>
