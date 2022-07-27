@@ -19,6 +19,7 @@ console.log(heightContainer);
 console.log(window.innerHeight);
 
 if ( heightContainer < window.innerHeight ){
+    location.reload();
     footer.style.position = "absolute";
     footer.style.bottom = "0";
     footer.style.width = "100%";
