@@ -129,7 +129,11 @@ let getHheightContainer = () => {
     return container.offsetHeight;
 }
 
+
 let heightContainer = getHheightContainer();
+
+console.log(heightContainer);
+console.log(window.innerHeight);
 
 if ( heightContainer < window.innerHeight ){
     footer.style.position = "absolute";
