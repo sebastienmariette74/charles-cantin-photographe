@@ -15,9 +15,6 @@ let getHeightContainer = () => {
 
 let heightContainer = getHeightContainer();
 
-console.log(heightContainer);
-console.log(window.innerHeight);
-
 if ( heightContainer < window.innerHeight ){
     location.reload();
     footer.style.position = "absolute";
