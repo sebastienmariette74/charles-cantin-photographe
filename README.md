@@ -7,6 +7,7 @@ Dans le cadre d'une évaluation lors de ma formation de Developpeur Web et Web M
 
 Les documents annexes sont disponibles dans le dossier "annexes" :
 - Charte graphique, wireframes et mockups
+- Guide d'utilisation
   
 
 Le maquettage a été réalisé à partir de Figma. Il est visible à cette adresse : https://www.figma.com/file/ULRVRPpFkBPhsRvI9dHcM4/Charles-CANTIN?node-id=0%3A1
