@@ -37,7 +37,7 @@ let changeWidth = () => {
 };
 
 let size = changeWidth();
-if (size < 576){
+if (size < 650){
     main.style.display = "none";
     burger.style.display = "block";
 } else {
@@ -65,7 +65,7 @@ window.addEventListener('click', (event)=>{
   
 window.addEventListener('resize', () => {    
     const size = changeWidth();
-    if (size > 576){
+    if (size > 650){
         main.style.display = "flex";
     } 
     else {
