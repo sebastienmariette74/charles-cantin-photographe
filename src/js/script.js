@@ -3,24 +3,24 @@ let hrefSplit = href.split('/');
 let page = hrefSplit[3];
 
 
-/* _____________ footer position ______________________*/
+// /* _____________ footer position ______________________*/
 
-let container = document.getElementById('container');
-let footer = document.getElementById('footer');
+// let container = document.getElementById('container');
+// let footer = document.getElementById('footer');
 
-let getHeightContainer = () => {
-    return container.offsetHeight;
-}
+// let getHeightContainer = () => {
+//     return container.offsetHeight;
+// }
 
 
-let heightContainer = getHeightContainer();
+// let heightContainer = getHeightContainer();
 
-if ( heightContainer < window.innerHeight ){
-    location.reload();
-    footer.style.position = "absolute";
-    footer.style.bottom = "0";
-    footer.style.width = "100%";
-};
+// if ( heightContainer < window.innerHeight ){
+//     location.reload();
+//     footer.style.position = "absolute";
+//     footer.style.bottom = "0";
+//     footer.style.width = "100%";
+// };
 
 
 
